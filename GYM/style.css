@@ -1,0 +1,281 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#0c0c0c;
+color:white;
+}
+
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:#00e0ff;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#00e0ff;
+}
+
+.join-btn{
+background:#00e0ff;
+border:none;
+padding:10px 20px;
+border-radius:25px;
+cursor:pointer;
+}
+
+
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero-buttons{
+margin-top:20px;
+}
+
+.primary{
+background:#00e0ff;
+border:none;
+padding:12px 25px;
+border-radius:25px;
+cursor:pointer;
+}
+
+.secondary{
+background:transparent;
+border:2px solid white;
+padding:12px 25px;
+border-radius:25px;
+color:white;
+margin-left:10px;
+cursor:pointer;
+}
+
+
+
+/* PROGRAMS */
+
+.programs{
+padding:80px 8%;
+text-align:center;
+}
+
+.section-title{
+font-size:34px;
+margin-bottom:40px;
+}
+
+.program-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.program-card{
+background:#1a1a1a;
+padding:30px;
+border-radius:10px;
+width:250px;
+transition:0.4s;
+}
+
+.program-card:hover{
+transform:translateY(-10px);
+}
+
+
+
+/* TRAINERS */
+
+.trainers{
+padding:80px 8%;
+text-align:center;
+}
+
+.trainer-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.trainer-card{
+background:#1a1a1a;
+padding:20px;
+border-radius:10px;
+width:250px;
+transition:0.4s;
+}
+
+.trainer-card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.trainer-card:hover{
+transform:scale(1.05);
+}
+
+
+
+/* PRICING */
+
+.pricing{
+padding:80px 8%;
+text-align:center;
+}
+
+.pricing-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.price-card{
+background:#1a1a1a;
+padding:30px;
+border-radius:10px;
+width:250px;
+}
+
+.price-card h2{
+margin:10px 0;
+}
+
+.price-card button{
+margin-top:10px;
+padding:10px 20px;
+border:none;
+background:#00e0ff;
+border-radius:20px;
+cursor:pointer;
+}
+
+.popular{
+transform:scale(1.1);
+border:2px solid #00e0ff;
+}
+
+
+
+/* TESTIMONIALS */
+
+.testimonials{
+padding:80px 8%;
+text-align:center;
+}
+
+.review-grid{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.review{
+background:#1a1a1a;
+padding:25px;
+border-radius:10px;
+width:250px;
+}
+
+
+
+/* CTA */
+
+.cta{
+background:#00e0ff;
+padding:80px;
+text-align:center;
+}
+
+
+
+/* FOOTER */
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+}
+
+
+
+/* BACK BUTTON */
+
+.back-btn{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#00e0ff;
+border:none;
+padding:12px 18px;
+border-radius:25px;
+cursor:pointer;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:34px;
+}
+
+.nav-links{
+display:none;
+}
+
+}

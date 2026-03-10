@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+font-family: "Poppins", sans-serif;
+}
+
+body{
+background-image: radial-gradient(57.72% 58.33% at 47.37% 102.73%, rgba(255, 185, 162, 0.5) 0, rgba(36, 31, 71, 0) 100%), radial-gradient(92.32% 103.31% at 7.16% 96.06%, rgba(117, 116, 230, 0.9) 0%, rgba(36, 31, 71, 0) 100%);
+background-color: #241F47;
+
+background-repeat: no-repeat;
+background-size: cover;
+color:white;
+}
+
+/* NAVBAR */
+  
+
+nav{
+  position: sticky;
+display:flex;
+justify-content:space-between;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+border-radius: 43px;
+align-items:center;
+margin-top: 10px;
+margin-left: 15px;
+ backdrop-filter: blur(20px);
+margin-right:15px;
+-webkit-backdrop-filter: blur(20px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 20px 10px rgba(83, 82, 82, 0.671);
+padding:15px 50px;
+background: rgba(109, 102, 102, 0.3);
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#fff;
+  font-family: "Gabarito", sans-serif;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#b6aff0;
+}
+
+/* HAMBURGER */
+
+.menu{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.nav-links{
+position: absolute;
+margin-left: 200px;
+top:80px;
+left:0;
+width: 200px;
+border-radius: 20px;
+background: rgba(95, 91, 91);
+box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+flex-direction:column;
+align-items:center;
+display:none;
+z-index:1000;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.nav-links li{
+padding:15px 0;
+}
+
+.menu{
+display:block;
+}
+
+}
+
+/* NAVBAR END */
+
+
+.demo-section{
+padding:100px 8%;
+text-align:center;
+}
+
+.demo-title{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.demo-sub{
+opacity:.7;
+margin-bottom:60px;
+}
+
+.demo-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.demo-card{
+backdrop-filter:blur(20px);
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+border-radius:18px;
+padding:20px;
+transition:0.4s;
+}
+
+.demo-card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 20px 50px rgba(0,0,0,0.3);
+}
+
+.demo-card img{
+width:100%;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.demo-buttons{
+display:flex;
+gap:10px;
+justify-content:center;
+margin-top:15px;
+}
+
+.demo-btn{
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+border:1px solid #ffffff33;
+color:white;
+transition:0.3s;
+}
+
+.demo-btn:hover{
+background:#ffffff22;
+}
+
+.cta-btn{
+padding:10px 20px;
+border-radius:8px;
+background:linear-gradient(90deg,#6c63ff,#7c4dff);
+color:white;
+text-decoration:none;
+transition:0.3s;
+box-shadow:0 0 15px rgba(108,99,255,.5);
+}
+
+.cta-btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 25px rgba(108,99,255,.9);
+}
+
+/*footer*/
+
+.footer{
+background:#020617;
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+.footer-links{
+margin:20px 0;
+}
+
+.footer-links a{
+margin:0 15px;
+text-decoration:none;
+color:#94a3b8;
+}
+
+.footer-links a:hover{
+color:white;
+}
+
+
+
+/*footer end*/

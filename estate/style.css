@@ -1,0 +1,237 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#0c0c0c;
+color:white;
+}
+
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:#ffd369;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#ffd369;
+}
+
+.contact-btn{
+background:#ffd369;
+border:none;
+padding:10px 20px;
+border-radius:25px;
+cursor:pointer;
+}
+
+
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.primary{
+margin-top:20px;
+padding:12px 25px;
+background:#ffd369;
+border:none;
+border-radius:25px;
+cursor:pointer;
+}
+
+
+
+/* PROPERTIES */
+
+.properties{
+padding:80px 8%;
+text-align:center;
+}
+
+.section-title{
+font-size:34px;
+margin-bottom:40px;
+}
+
+.property-grid{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.property-card{
+background:#1a1a1a;
+border-radius:10px;
+overflow:hidden;
+width:280px;
+transition:0.5s;
+transform-style:preserve-3d;
+}
+
+.property-card img{
+width:100%;
+}
+
+.property-card:hover{
+transform:rotateY(8deg) scale(1.05);
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+.property-info{
+padding:20px;
+}
+
+
+
+/* STATS */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+padding:80px;
+text-align:center;
+}
+
+.stat h2{
+color:#ffd369;
+font-size:40px;
+}
+
+
+
+/* AGENTS */
+
+.agents{
+padding:80px 8%;
+text-align:center;
+}
+
+.agent-grid{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.agent-card{
+background:#1a1a1a;
+padding:20px;
+border-radius:10px;
+width:250px;
+transition:0.4s;
+}
+
+.agent-card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.agent-card:hover{
+transform:translateY(-10px);
+}
+
+
+
+/* CTA */
+
+.cta{
+background:#ffd369;
+padding:80px;
+text-align:center;
+color:black;
+}
+
+
+
+/* FOOTER */
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+}
+
+
+
+/* BACK BUTTON */
+
+.back-btn{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#ffd369;
+border:none;
+padding:12px 18px;
+border-radius:25px;
+cursor:pointer;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:34px;
+}
+
+.nav-links{
+display:none;
+}
+
+.stats{
+flex-direction:column;
+gap:30px;
+}
+
+}
