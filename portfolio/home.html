@@ -6,11 +6,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Creative Portfolio</title>
+<title>Modern Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
@@ -20,16 +23,19 @@
 
 <nav class="navbar">
 
-<h2 class="logo">ME.</h2>
+<h2 class="logo">Portfolio</h2>
 
 <ul class="nav-links">
 
 <li><a href="#">Home</a></li>
-<li><a href="#skills">Skills</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
 
 </ul>
+
+<button class="hire-btn">Hire Me</button>
 
 </nav>
 
@@ -37,13 +43,41 @@
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="hero-text">
 
-<h1>Creative Web Designer</h1>
+<p class="badge">Available for freelance</p>
 
-<p>I design modern animated websites with premium UI & UX.</p>
+<h1 class="gradient-text">Name</h1>
 
-<button class="primary">View My Work</button>
+<h3>Web Designer & Developer</h3>
+
+<p class="desc">
+Creating premium responsive websites with modern UI, animations and strong UX.
+</p>
+
+<div class="hero-buttons">
+
+<button class="primary">View Work</button>
+<button class="secondary">Resume</button>
+
+</div>
+<br>
+<div class="icons">
+
+<i class="fab fa-github"></i>
+<i class="fab fa-linkedin"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+
+</div>
+
+</div>
+
+
+
+<div class="hero-img">
+
+<img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d">
 
 </div>
 
@@ -51,33 +85,92 @@
 
 
 
-<section id="skills" class="skills">
+<section id="about" class="about">
 
-<h2 class="section-title">Skills</h2>
+<div class="about-text">
 
-<div class="skills-grid">
+<h2>About Me</h2>
 
-<div class="skill-card">
+<p>
+I design modern digital experiences with responsive UI and powerful frontend.
+</p>
+<br>
+<div class="skills">
 
-<h3>🌐 Web Design</h3>
-
-<p>Modern responsive UI design.</p>
-
-</div>
-
-<div class="skill-card">
-
-<h3>⚡ Frontend</h3>
-
-<p>HTML CSS animations and layouts.</p>
+<span>Web Design</span>
+<span>Frontend</span>
+<span>SEO</span>
+<span>UI/UX</span>
 
 </div>
 
-<div class="skill-card">
+</div>
 
-<h3>🎨 UI/UX</h3>
 
-<p>Clean and attractive user experiences.</p>
+
+<div class="stats">
+
+<div class="card">
+<h3>50+</h3>
+<p>Projects</p>
+</div>
+
+<div class="card">
+<h3>30+</h3>
+<p>Clients</p>
+</div>
+
+<div class="card">
+<h3>7+</h3>
+<p>Years</p>
+</div>
+
+<div class="card">
+<h3>100%</h3>
+<p>Satisfaction</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="services" class="services">
+
+<h2 class="section-title">Services</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<i class="fa fa-code"></i>
+<h3>Web Development</h3>
+<p>Modern responsive websites</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa fa-store"></i>
+<h3>Ecommerce</h3>
+<p>Online stores</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa fa-chart-line"></i>
+<h3>SEO</h3>
+<p>Website ranking optimization</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa fa-palette"></i>
+<h3>Graphic Design</h3>
+<p>Creative brand visuals</p>
 
 </div>
 
@@ -89,17 +182,13 @@
 
 <section id="projects" class="projects">
 
-<h2 class="section-title">Projects</h2>
+<h2 class="section-title">Featured Work</h2>
 
-<div class="project-grid">
+<div class="projects-grid">
 
 <div class="project-card">
 
 <h3>Restaurant Website</h3>
-
-<p>Modern animated restaurant landing page.</p>
-
-<button>View</button>
 
 </div>
 
@@ -107,51 +196,13 @@
 
 <h3>Fitness Website</h3>
 
-<p>Premium gym landing page design.</p>
-
-<button>View</button>
-
 </div>
 
 <div class="project-card">
 
-<h3>Beauty Salon</h3>
-
-<p>Luxury nude theme salon website.</p>
-
-<button>View</button>
+<h3>Salon Website</h3>
 
 </div>
-
-</div>
-
-</section>
-
-
-
-<section class="stats">
-
-<div class="stat">
-
-<h2>15+</h2>
-
-<p>Projects</p>
-
-</div>
-
-<div class="stat">
-
-<h2>10+</h2>
-
-<p>Clients</p>
-
-</div>
-
-<div class="stat">
-
-<h2>100%</h2>
-
-<p>Satisfaction</p>
 
 </div>
 
@@ -164,7 +215,7 @@
 <h2>Let's Work Together</h2>
 
 <p>Need a modern website for your business?</p>
-
+<br>
 <button class="primary">Contact Me</button>
 
 </section>
@@ -173,14 +224,34 @@
 
 <footer>
 
-<p>© 2026 Creative Portfolio</p>
+<p>© 2026 Portfolio</p>
 
 </footer>
 
 
 
-<a href="../demo.html"><button class="back-btn">⬅ Go Back</button></a>
 
+<a href="../demo.html"><button class="back">Go Back</button></a>
+
+
+
+<script>window.addEventListener("scroll",()=>{
+
+document.querySelectorAll(".service-card,.project-card,.card").forEach(el=>{
+
+let pos=el.getBoundingClientRect().top;
+
+if(pos<window.innerHeight-100){
+
+el.style.opacity="1";
+el.style.transform="translateY(0)";
+
+}
+
+})
+
+})</script>
 
 </body>
+
 </html>
